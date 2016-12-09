@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="" name="">
+    <button class="">搜索</button>
+    <div class="result">
+        <div class="name"></div>
+        <div class="bg想·"></div>
+    </div>
+    <script>
+    $('button').on('click', function() {
+        if ($.trim($('input').val()) === "block") {
+            $('.result').text('block:address – 地址blockquote – 块引用 center – 举中对齐块dir – 目录列表div – 常用块级容易，也是css layout的主要标签dl – 定义列表fieldset – form控制组form – 交互表单h1 – 大标题h2 – 副标题h3 – 3级标题 h4 – 4级标题h5 – 5级标题h6 – 6级标题hr – 水平分隔线 isindex – input prompt   menu – 菜单列表noframes – frames可选内容，（对于不支持frame的浏览器显示此区块内容）noscript – 可选脚本内容（对于不支持script的浏览器显示此内容）ol – 排序表单p – 段落pre – 格式化文本table – 表格ul – 非排序列表');
+        } else if ($.trim($('input').val()) === "inline-block") {
+            $('.result').text('inline-block:a – 锚点abbr – 缩写acronym – 首字b – 粗体(不推荐)bdo – bidi overridebig – 大字体br – 换行cite – 引用code – 计算机代码(在引用源码的时候需要)dfn – 定义字段 em – 强调 font – 字体设定(不推荐)  i – 斜体  img – 图片  input – 输入框  kbd – 定义键盘文  label – 表格标签 q – 短引用 s – 中划线(不推荐) samp – 定义范例计算机代码  select – 项目选择 small – 小字体文本  span – 常用内联容器，定义文本内区块 strike – 中划线 strong – 粗体强调 sub – 下标 sup – 上标  textarea – 多行文本输入框  tt – 电传文本 u – 下划线  var – 定义变量');
+        } else if ($.trim($('input').val()) === "box-sizing") {
+            $('.result').text('1. content-box：padding和border不被包含在定义的width和height之内。对象的实际宽度等于设置的width值和border、padding以及margin之和，即 ( Element width = width + border + padding+margin )此属性表现为标准模式下的盒模型。2. border-box：padding和border被包含在定义的width和height之内。对象的实际宽度就等于设置的width值，即使定义有border和padding也不会改变对象的实际宽度，即 ( Element width = width )');
+        } else if ($.trim($('input').val()) === "content-box") {
+            $('.result').text('content-box：padding和border不被包含在定义的width和height之内。对象的实际宽度等于设置的width值和border、padding以及margin之和，即 ( Element width = width + border + padding+margin )此属性表现为标准模式下的盒模型。');
+        } else if ($.trim($('input').val()) === "border-box") {
+            $('.result').text('border-box：padding和border被包含在定义的width和height之内。对象的实际宽度就等于设置的width值，即使定义有border和padding也不会改变对象的实际宽度，即 ( Element width = width )');
+        } else if ($.trim($('input').val()) === "background-size") {
+            $('.result').text('1. cover：背景铺满元素（宽度完整） 2.contain：元素包含整个背景图（高度完整，一屏完整图像）。');
+        } else if ($.trim($("input").val()) === "中午吃什么") {
+            $(".result").text("米饭");
+        } else if ($("input").val() === "晚上吃什么") {
+            $(".result").text("你问我呢！");
+        } else if ($.trim($("input").val()) === "第1章HTML5背景知识") {
+            $(".result").text(".1 HTML的历史 2                                                                                                 1.1.1 JavaScript出场 2 1.1.2 浏览器战争的结束 3 1.1.3 插件称雄 3 1.1.4 语义HTML浮出水面 3 1.1.5 发展态势：HTML标准滞后于其使用 4 1.2 HTML5简介 4 1.2.1 新标准 4 1.2.2 引入原生多媒体支持 5 1.2.3 引入可编程内容 5 1.2.4 引入语义Web 6 1.3 HTML5现况 6 1.3.1 浏览器对HTML5的支持情况 6 1.3.2 网站对HTML5的支持情况 6 1.4 本书结构 6 1.5 HTML5的更多信息 7 1.6 小结 7");
+        } else if ($.trim($("input").val()) === "第2章准备工作") {
+            $(".result").text("2.1 挑选浏览器 2.3 挑选Web服务器 2.4 获取Node.js 2.5 获取示例代码2.6 小结 10 ");
+
+        } else if ($("input").val() === "晚上吃什么?") {
+            $(".result").css({
+                "background-image": "url(111.jpg)",
+                "width": "100px",
+                "height": "100px"
+            });
+        } else if ($("input").val() === "2") {
+
+            $(".result .bg").css({
+                "background-image": "url(1.jpeg)",
+                "width": "450px",
+                "height": "355"
+            })
+            $(".result .name").text("你问我呢")
+            $(".result .name").css({
+                "text-align": "center",
+                "width": "450px"
+            })
+        } else if ($.trim($("input").val()) === "bim") {
+            $(".result .name").text("工作就像聊天");
+
+            $(".result .name").css({
+                "text-align": "center",
+                "width": "1440px"
+            })
+            $(".result .bg").css({
+                "background-image": "url(bimworks.png)",
+                "width": "1440px",
+                "height": "6890px"
+            });
+
+
+
+        } else {
+            $('.result').text('');
+        }
+    })
+    </script>
+</body>
+
+</html>
